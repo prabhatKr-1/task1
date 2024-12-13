@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function Home() {
+const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <h1>Welcome to Xenon Properties</h1>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

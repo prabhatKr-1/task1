@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-function Logout() {
+const Logout = () => {
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    alert('Logged out successfully!');
+  };
+
   return (
-    <div>Logout</div>
-  )
-}
+    <button onClick={handleLogout} className="logout-button">
+      Logout
+    </button>
+  );
+};
 
-export default Logout
+export default Logout;

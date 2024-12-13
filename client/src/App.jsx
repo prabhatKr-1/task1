@@ -6,6 +6,7 @@ import RecommendationsPage from "./pages/RecommendationsPage";
 import Login from "./components/Auth/Login";
 import Logout from "./components/Auth/Logout";
 import SignUp from "./components/Auth/SignUp";
+import Profile from "./pages/Profile";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );
