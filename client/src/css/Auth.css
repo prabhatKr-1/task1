@@ -81,3 +81,31 @@ form button:hover {
     padding: 8px;
   }
 }
+.signup-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.link-signup {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.link-signup:hover {
+  text-decoration: underline;
+}
+.signin-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.link-signin {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.link-signin:hover {
+  text-decoration: underline;
+}

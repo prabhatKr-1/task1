@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom'; // Import Link
 import '../../css/Auth.css';
 
 const Login = () => {
@@ -9,7 +10,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/auth/login', { email, password });
+      const response = await axios.post('https://bdeploy.onrender.com/api/auth/login', { email, password });
       const data = response.data;
       if (data.success) {
         localStorage.setItem('token', data.token);
@@ -43,6 +44,12 @@ const Login = () => {
         />
         <button type="submit">Login</button>
       </form>
+      <div className="signup-link">
+        <p>
+          New here?{' '}
+          <Link to="/signup" className="link-signup">Sign Up</Link>
+        </p>
+      </div>
     </div>
   );
 };

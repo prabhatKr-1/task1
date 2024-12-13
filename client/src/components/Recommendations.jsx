@@ -9,7 +9,7 @@ const Recommendations = () => {
   useEffect(() => {
     const fetchRecommendations = async () => {
       try {
-        const response = await axios.get('/api/recommendations');
+        const response = await axios.get('https://bdeploy.onrender.com/api/recommendations');
         setRecommendedProperties(response.data);
       } catch (error) {
         console.error('Error fetching recommendations:', error);

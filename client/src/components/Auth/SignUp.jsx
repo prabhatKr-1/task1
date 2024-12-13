@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom'; // Import Link
 import '../../css/Auth.css';
 
 const SignUp = () => {
@@ -29,7 +30,7 @@ const SignUp = () => {
       return;
     }
     try {
-      const response = await axios.post('/api/auth/signup', { name, email, password });
+      const response = await axios.post('https://bdeploy.onrender.com/api/auth/register', { name, email, password });
       if (response.data.success) {
         alert('Sign-Up Successful! You can now log in.');
       } else {
@@ -69,6 +70,12 @@ const SignUp = () => {
         />
         <button type="submit">Sign Up</button>
       </form>
+      <div className="signin-link">
+        <p>
+          Already have an account?{' '}
+          <Link to="/login" className="link-signin">Sign In</Link>
+        </p>
+      </div>
     </div>
   );
 };

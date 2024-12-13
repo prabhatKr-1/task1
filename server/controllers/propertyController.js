@@ -1,12 +1,11 @@
 import Property from '../models/propertyModel.js';
+import { dummyProperties } from '../utils/dummyData.js'; 
 
 export const getProperties = async (req, res) => {
-  try {
-    const properties = await Property.find();
+  
+    const properties = dummyProperties;
     res.json(properties);
-  } catch (error) {
-    res.status(500).json({ message: 'Server error' });
-  }
+  
 };
 
 export const getPropertyById = async (req, res) => {

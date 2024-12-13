@@ -2,7 +2,7 @@ import { generateRecommendations } from '../recommendationAI.js';
 import { dummyProperties } from '../utils/dummyData.js'; 
 
 export const getRecommendations = async (req, res) => {
-  const { maxPrice, preferredLocation, propertyType } = req.body; // User preferences sent in the request body
+  const { maxPrice, preferredLocation, propertyType } = req.body; 
 
   try {
     const userPreferences = {

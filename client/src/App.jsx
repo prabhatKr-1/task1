@@ -7,12 +7,14 @@ import Login from "./components/Auth/Login";
 import Logout from "./components/Auth/Logout";
 import SignUp from "./components/Auth/SignUp";
 import Profile from "./pages/Profile";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
     <Router>
+      <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<ListingsPage />} />
         <Route path="/listings" element={<ListingsPage />} />
         <Route path="/recommendations" element={<RecommendationsPage />} />
         <Route path="/login" element={<Login />} />
