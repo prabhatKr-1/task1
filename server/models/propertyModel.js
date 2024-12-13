@@ -5,8 +5,8 @@ const propertySchema = new mongoose.Schema({
   description: { type: String, required: true },
   price: { type: Number, required: true },
   location: { type: String, required: true },
-  type: { type: String, required: true }, // e.g., 'sale', 'rent'
-  images: [String], // Array of image URLs
+  type: { type: String, required: true }, 
+  images: [String], 
 });
 
 const Property = mongoose.model('Property', propertySchema);
