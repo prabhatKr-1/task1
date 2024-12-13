@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import PropertyList from '../components/PropertyList';
 
-function ListingsPage() {
+const ListingsPage = () => {
   return (
-    <div>ListingsPage</div>
-  )
-}
+    <div>
+      <h1>Property Listings</h1>
+      <PropertyList />
+    </div>
+  );
+};
 
-export default ListingsPage
+export default ListingsPage;

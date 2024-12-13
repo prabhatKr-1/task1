@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Recommendations from '../components/Recommendations';
 
-function RecommendationsPage() {
+const RecommendationsPage = () => {
   return (
-    <div>RecommendationsPage</div>
-  )
-}
+    <div>
+      <h1>Recommended for You</h1>
+      <Recommendations />
+    </div>
+  );
+};
 
-export default RecommendationsPage
+export default RecommendationsPage;
