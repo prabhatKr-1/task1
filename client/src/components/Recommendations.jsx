@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import PropertyCard from './PropertyCard';
+import '../css/Recommendation.css';
 
 const Recommendations = () => {
   const [recommendedProperties, setRecommendedProperties] = useState([]);

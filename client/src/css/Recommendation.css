@@ -1,0 +1,27 @@
+.recommendations {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.recommendations h2 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .recommendations h2 {
+    font-size: 20px;
+  }
+
+  .property-list {
+    gap: 10px;
+  }
+}

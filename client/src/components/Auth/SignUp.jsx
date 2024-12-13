@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../../css/Auth.css';
 
 const SignUp = () => {
   const [name, setName] = useState('');
